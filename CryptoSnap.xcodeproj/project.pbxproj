@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F74C656218E90563006CB71E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656118E90563006CB71E /* Foundation.framework */; };
+		F74C656418E90563006CB71E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656318E90563006CB71E /* CoreGraphics.framework */; };
+		F74C656618E90563006CB71E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656518E90563006CB71E /* UIKit.framework */; };
+		F74C656C18E90563006CB71E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74C656A18E90563006CB71E /* InfoPlist.strings */; };
+		F74C656E18E90563006CB71E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C656D18E90563006CB71E /* main.m */; };
+		F74C657218E90563006CB71E /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C657118E90563006CB71E /* CSAppDelegate.m */; };
+		F74C657418E90563006CB71E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74C657318E90563006CB71E /* Images.xcassets */; };
+		F74C657B18E90564006CB71E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C657A18E90564006CB71E /* XCTest.framework */; };
+		F74C657C18E90564006CB71E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656118E90563006CB71E /* Foundation.framework */; };
+		F74C657D18E90564006CB71E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656518E90563006CB71E /* UIKit.framework */; };
+		F74C658518E90564006CB71E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74C658318E90564006CB71E /* InfoPlist.strings */; };
+		F74C658718E90564006CB71E /* CryptoSnapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C658618E90564006CB71E /* CryptoSnapTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F74C657E18E90564006CB71E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74C655618E90563006CB71E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F74C655D18E90563006CB71E;
+			remoteInfo = CryptoSnap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F74C655E18E90563006CB71E /* CryptoSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74C656118E90563006CB71E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F74C656318E90563006CB71E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F74C656518E90563006CB71E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F74C656918E90563006CB71E /* CryptoSnap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptoSnap-Info.plist"; sourceTree = "<group>"; };
+		F74C656B18E90563006CB71E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F74C656D18E90563006CB71E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F74C656F18E90563006CB71E /* CryptoSnap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoSnap-Prefix.pch"; sourceTree = "<group>"; };
+		F74C657018E90563006CB71E /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		F74C657118E90563006CB71E /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		F74C657318E90563006CB71E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F74C657918E90564006CB71E /* CryptoSnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoSnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74C657A18E90564006CB71E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F74C658218E90564006CB71E /* CryptoSnapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptoSnapTests-Info.plist"; sourceTree = "<group>"; };
+		F74C658418E90564006CB71E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F74C658618E90564006CB71E /* CryptoSnapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoSnapTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F74C655B18E90563006CB71E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74C656418E90563006CB71E /* CoreGraphics.framework in Frameworks */,
+				F74C656618E90563006CB71E /* UIKit.framework in Frameworks */,
+				F74C656218E90563006CB71E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74C657618E90564006CB71E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74C657B18E90564006CB71E /* XCTest.framework in Frameworks */,
+				F74C657D18E90564006CB71E /* UIKit.framework in Frameworks */,
+				F74C657C18E90564006CB71E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F74C655518E90563006CB71E = {
+			isa = PBXGroup;
+			children = (
+				F74C656718E90563006CB71E /* CryptoSnap */,
+				F74C658018E90564006CB71E /* CryptoSnapTests */,
+				F74C656018E90563006CB71E /* Frameworks */,
+				F74C655F18E90563006CB71E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F74C655F18E90563006CB71E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F74C655E18E90563006CB71E /* CryptoSnap.app */,
+				F74C657918E90564006CB71E /* CryptoSnapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F74C656018E90563006CB71E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74C656118E90563006CB71E /* Foundation.framework */,
+				F74C656318E90563006CB71E /* CoreGraphics.framework */,
+				F74C656518E90563006CB71E /* UIKit.framework */,
+				F74C657A18E90564006CB71E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F74C656718E90563006CB71E /* CryptoSnap */ = {
+			isa = PBXGroup;
+			children = (
+				F74C657018E90563006CB71E /* CSAppDelegate.h */,
+				F74C657118E90563006CB71E /* CSAppDelegate.m */,
+				F74C657318E90563006CB71E /* Images.xcassets */,
+				F74C656818E90563006CB71E /* Supporting Files */,
+			);
+			path = CryptoSnap;
+			sourceTree = "<group>";
+		};
+		F74C656818E90563006CB71E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F74C656918E90563006CB71E /* CryptoSnap-Info.plist */,
+				F74C656A18E90563006CB71E /* InfoPlist.strings */,
+				F74C656D18E90563006CB71E /* main.m */,
+				F74C656F18E90563006CB71E /* CryptoSnap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F74C658018E90564006CB71E /* CryptoSnapTests */ = {
+			isa = PBXGroup;
+			children = (
+				F74C658618E90564006CB71E /* CryptoSnapTests.m */,
+				F74C658118E90564006CB71E /* Supporting Files */,
+			);
+			path = CryptoSnapTests;
+			sourceTree = "<group>";
+		};
+		F74C658118E90564006CB71E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F74C658218E90564006CB71E /* CryptoSnapTests-Info.plist */,
+				F74C658318E90564006CB71E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F74C655D18E90563006CB71E /* CryptoSnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74C658A18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnap" */;
+			buildPhases = (
+				F74C655A18E90563006CB71E /* Sources */,
+				F74C655B18E90563006CB71E /* Frameworks */,
+				F74C655C18E90563006CB71E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoSnap;
+			productName = CryptoSnap;
+			productReference = F74C655E18E90563006CB71E /* CryptoSnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F74C657818E90564006CB71E /* CryptoSnapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F74C658D18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnapTests" */;
+			buildPhases = (
+				F74C657518E90564006CB71E /* Sources */,
+				F74C657618E90564006CB71E /* Frameworks */,
+				F74C657718E90564006CB71E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F74C657F18E90564006CB71E /* PBXTargetDependency */,
+			);
+			name = CryptoSnapTests;
+			productName = CryptoSnapTests;
+			productReference = F74C657918E90564006CB71E /* CryptoSnapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F74C655618E90563006CB71E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = CryptoSnap;
+				TargetAttributes = {
+					F74C657818E90564006CB71E = {
+						TestTargetID = F74C655D18E90563006CB71E;
+					};
+				};
+			};
+			buildConfigurationList = F74C655918E90563006CB71E /* Build configuration list for PBXProject "CryptoSnap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F74C655518E90563006CB71E;
+			productRefGroup = F74C655F18E90563006CB71E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F74C655D18E90563006CB71E /* CryptoSnap */,
+				F74C657818E90564006CB71E /* CryptoSnapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F74C655C18E90563006CB71E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74C656C18E90563006CB71E /* InfoPlist.strings in Resources */,
+				F74C657418E90563006CB71E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74C657718E90564006CB71E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74C658518E90564006CB71E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F74C655A18E90563006CB71E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74C657218E90563006CB71E /* CSAppDelegate.m in Sources */,
+				F74C656E18E90563006CB71E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F74C657518E90564006CB71E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F74C658718E90564006CB71E /* CryptoSnapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F74C657F18E90564006CB71E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F74C655D18E90563006CB71E /* CryptoSnap */;
+			targetProxy = F74C657E18E90564006CB71E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F74C656A18E90563006CB71E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F74C656B18E90563006CB71E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F74C658318E90564006CB71E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F74C658418E90564006CB71E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F74C658818E90564006CB71E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F74C658918E90564006CB71E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F74C658B18E90564006CB71E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
+				INFOPLIST_FILE = "CryptoSnap/CryptoSnap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F74C658C18E90564006CB71E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
+				INFOPLIST_FILE = "CryptoSnap/CryptoSnap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F74C658E18E90564006CB71E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CryptoSnap.app/CryptoSnap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CryptoSnapTests/CryptoSnapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F74C658F18E90564006CB71E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CryptoSnap.app/CryptoSnap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
+				INFOPLIST_FILE = "CryptoSnapTests/CryptoSnapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F74C655918E90563006CB71E /* Build configuration list for PBXProject "CryptoSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74C658818E90564006CB71E /* Debug */,
+				F74C658918E90564006CB71E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F74C658A18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74C658B18E90564006CB71E /* Debug */,
+				F74C658C18E90564006CB71E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F74C658D18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F74C658E18E90564006CB71E /* Debug */,
+				F74C658F18E90564006CB71E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F74C655618E90563006CB71E /* Project object */;
+}
