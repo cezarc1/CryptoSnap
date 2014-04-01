@@ -22,15 +22,19 @@ PODS:
     - Mantle/extobjc
   - Mantle/extobjc (1.4.1)
   - OpenSSL (1.0.1)
+  - UNNetPGP (0.8.1):
+    - OpenSSL
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.1)
   - Mantle (~> 1.4.1)
   - OpenSSL
+  - UNNetPGP (~> 0.8)
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
   Mantle: 0714cdb2b8559d9e6c2410d6a8529e3307bff189
   OpenSSL: 9b85178853701b1e9bbf70df695a4c149799e772
+  UNNetPGP: 5a954c0378419df9b391a11a333a9e4ece36014c
 
 COCOAPODS: 0.31.0
