@@ -1,453 +1,1616 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		F74C656218E90563006CB71E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656118E90563006CB71E /* Foundation.framework */; };
-		F74C656418E90563006CB71E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656318E90563006CB71E /* CoreGraphics.framework */; };
-		F74C656618E90563006CB71E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656518E90563006CB71E /* UIKit.framework */; };
-		F74C656C18E90563006CB71E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74C656A18E90563006CB71E /* InfoPlist.strings */; };
-		F74C656E18E90563006CB71E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C656D18E90563006CB71E /* main.m */; };
-		F74C657218E90563006CB71E /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C657118E90563006CB71E /* CSAppDelegate.m */; };
-		F74C657418E90563006CB71E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74C657318E90563006CB71E /* Images.xcassets */; };
-		F74C657B18E90564006CB71E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C657A18E90564006CB71E /* XCTest.framework */; };
-		F74C657C18E90564006CB71E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656118E90563006CB71E /* Foundation.framework */; };
-		F74C657D18E90564006CB71E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74C656518E90563006CB71E /* UIKit.framework */; };
-		F74C658518E90564006CB71E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74C658318E90564006CB71E /* InfoPlist.strings */; };
-		F74C658718E90564006CB71E /* CryptoSnapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74C658618E90564006CB71E /* CryptoSnapTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F74C657E18E90564006CB71E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F74C655618E90563006CB71E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F74C655D18E90563006CB71E;
-			remoteInfo = CryptoSnap;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		F74C655E18E90563006CB71E /* CryptoSnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoSnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F74C656118E90563006CB71E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F74C656318E90563006CB71E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F74C656518E90563006CB71E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F74C656918E90563006CB71E /* CryptoSnap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptoSnap-Info.plist"; sourceTree = "<group>"; };
-		F74C656B18E90563006CB71E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F74C656D18E90563006CB71E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F74C656F18E90563006CB71E /* CryptoSnap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoSnap-Prefix.pch"; sourceTree = "<group>"; };
-		F74C657018E90563006CB71E /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
-		F74C657118E90563006CB71E /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
-		F74C657318E90563006CB71E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F74C657918E90564006CB71E /* CryptoSnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoSnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F74C657A18E90564006CB71E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F74C658218E90564006CB71E /* CryptoSnapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptoSnapTests-Info.plist"; sourceTree = "<group>"; };
-		F74C658418E90564006CB71E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F74C658618E90564006CB71E /* CryptoSnapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoSnapTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		F74C655B18E90563006CB71E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74C656418E90563006CB71E /* CoreGraphics.framework in Frameworks */,
-				F74C656618E90563006CB71E /* UIKit.framework in Frameworks */,
-				F74C656218E90563006CB71E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F74C657618E90564006CB71E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74C657B18E90564006CB71E /* XCTest.framework in Frameworks */,
-				F74C657D18E90564006CB71E /* UIKit.framework in Frameworks */,
-				F74C657C18E90564006CB71E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		F74C655518E90563006CB71E = {
-			isa = PBXGroup;
-			children = (
-				F74C656718E90563006CB71E /* CryptoSnap */,
-				F74C658018E90564006CB71E /* CryptoSnapTests */,
-				F74C656018E90563006CB71E /* Frameworks */,
-				F74C655F18E90563006CB71E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		F74C655F18E90563006CB71E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F74C655E18E90563006CB71E /* CryptoSnap.app */,
-				F74C657918E90564006CB71E /* CryptoSnapTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F74C656018E90563006CB71E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F74C656118E90563006CB71E /* Foundation.framework */,
-				F74C656318E90563006CB71E /* CoreGraphics.framework */,
-				F74C656518E90563006CB71E /* UIKit.framework */,
-				F74C657A18E90564006CB71E /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F74C656718E90563006CB71E /* CryptoSnap */ = {
-			isa = PBXGroup;
-			children = (
-				F74C657018E90563006CB71E /* CSAppDelegate.h */,
-				F74C657118E90563006CB71E /* CSAppDelegate.m */,
-				F74C657318E90563006CB71E /* Images.xcassets */,
-				F74C656818E90563006CB71E /* Supporting Files */,
-			);
-			path = CryptoSnap;
-			sourceTree = "<group>";
-		};
-		F74C656818E90563006CB71E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F74C656918E90563006CB71E /* CryptoSnap-Info.plist */,
-				F74C656A18E90563006CB71E /* InfoPlist.strings */,
-				F74C656D18E90563006CB71E /* main.m */,
-				F74C656F18E90563006CB71E /* CryptoSnap-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F74C658018E90564006CB71E /* CryptoSnapTests */ = {
-			isa = PBXGroup;
-			children = (
-				F74C658618E90564006CB71E /* CryptoSnapTests.m */,
-				F74C658118E90564006CB71E /* Supporting Files */,
-			);
-			path = CryptoSnapTests;
-			sourceTree = "<group>";
-		};
-		F74C658118E90564006CB71E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F74C658218E90564006CB71E /* CryptoSnapTests-Info.plist */,
-				F74C658318E90564006CB71E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		F74C655D18E90563006CB71E /* CryptoSnap */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F74C658A18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnap" */;
-			buildPhases = (
-				F74C655A18E90563006CB71E /* Sources */,
-				F74C655B18E90563006CB71E /* Frameworks */,
-				F74C655C18E90563006CB71E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CryptoSnap;
-			productName = CryptoSnap;
-			productReference = F74C655E18E90563006CB71E /* CryptoSnap.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F74C657818E90564006CB71E /* CryptoSnapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F74C658D18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnapTests" */;
-			buildPhases = (
-				F74C657518E90564006CB71E /* Sources */,
-				F74C657618E90564006CB71E /* Frameworks */,
-				F74C657718E90564006CB71E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F74C657F18E90564006CB71E /* PBXTargetDependency */,
-			);
-			name = CryptoSnapTests;
-			productName = CryptoSnapTests;
-			productReference = F74C657918E90564006CB71E /* CryptoSnapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		F74C655618E90563006CB71E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = CS;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = CryptoSnap;
-				TargetAttributes = {
-					F74C657818E90564006CB71E = {
-						TestTargetID = F74C655D18E90563006CB71E;
-					};
-				};
-			};
-			buildConfigurationList = F74C655918E90563006CB71E /* Build configuration list for PBXProject "CryptoSnap" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = F74C655518E90563006CB71E;
-			productRefGroup = F74C655F18E90563006CB71E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F74C655D18E90563006CB71E /* CryptoSnap */,
-				F74C657818E90564006CB71E /* CryptoSnapTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		F74C655C18E90563006CB71E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74C656C18E90563006CB71E /* InfoPlist.strings in Resources */,
-				F74C657418E90563006CB71E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F74C657718E90564006CB71E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74C658518E90564006CB71E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		F74C655A18E90563006CB71E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74C657218E90563006CB71E /* CSAppDelegate.m in Sources */,
-				F74C656E18E90563006CB71E /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F74C657518E90564006CB71E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74C658718E90564006CB71E /* CryptoSnapTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F74C657F18E90564006CB71E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F74C655D18E90563006CB71E /* CryptoSnap */;
-			targetProxy = F74C657E18E90564006CB71E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F74C656A18E90563006CB71E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F74C656B18E90563006CB71E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F74C658318E90564006CB71E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F74C658418E90564006CB71E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		F74C658818E90564006CB71E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		F74C658918E90564006CB71E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F74C658B18E90564006CB71E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
-				INFOPLIST_FILE = "CryptoSnap/CryptoSnap-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		F74C658C18E90564006CB71E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
-				INFOPLIST_FILE = "CryptoSnap/CryptoSnap-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		F74C658E18E90564006CB71E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CryptoSnap.app/CryptoSnap";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "CryptoSnapTests/CryptoSnapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F74C658F18E90564006CB71E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CryptoSnap.app/CryptoSnap";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CryptoSnap/CryptoSnap-Prefix.pch";
-				INFOPLIST_FILE = "CryptoSnapTests/CryptoSnapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		F74C655918E90563006CB71E /* Build configuration list for PBXProject "CryptoSnap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F74C658818E90564006CB71E /* Debug */,
-				F74C658918E90564006CB71E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F74C658A18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F74C658B18E90564006CB71E /* Debug */,
-				F74C658C18E90564006CB71E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		F74C658D18E90564006CB71E /* Build configuration list for PBXNativeTarget "CryptoSnapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F74C658E18E90564006CB71E /* Debug */,
-				F74C658F18E90564006CB71E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = F74C655618E90563006CB71E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>05CA2D8D74DA4D5980499A12</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4DFBD105CB2C4CEAB4AED56A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-CryptoSnap-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>6B457A0A355748738C96674B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>A8F34B3B7D0140679C7896B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CryptoSnap.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-CryptoSnap.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C9EE343C04074B57B5987638</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E6553D2C88714BF3B9B93A69</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5E92E9C6DF649B8A8A9CFD4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E6553D2C88714BF3B9B93A69</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-CryptoSnap.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F4BB26BB5FB3405797DF70E1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E5E92E9C6DF649B8A8A9CFD4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C655518E90563006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7F668B418EA29B700D4F692</string>
+				<string>F74C656718E90563006CB71E</string>
+				<string>F74C658018E90564006CB71E</string>
+				<string>F74C656018E90563006CB71E</string>
+				<string>F74C655F18E90563006CB71E</string>
+				<string>05CA2D8D74DA4D5980499A12</string>
+				<string>A8F34B3B7D0140679C7896B9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C655618E90563006CB71E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>CS</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>CryptoSnap</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>F74C657818E90564006CB71E</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>F74C655D18E90563006CB71E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>F74C655918E90563006CB71E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>F74C655518E90563006CB71E</string>
+			<key>productRefGroup</key>
+			<string>F74C655F18E90563006CB71E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>F74C655D18E90563006CB71E</string>
+				<string>F74C657818E90564006CB71E</string>
+			</array>
+		</dict>
+		<key>F74C655918E90563006CB71E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F74C658818E90564006CB71E</string>
+				<string>F74C658918E90564006CB71E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F74C655A18E90563006CB71E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7E3DC0318E92687008A6678</string>
+				<string>F74C657218E90563006CB71E</string>
+				<string>F7F668D518EA2BC100D4F692</string>
+				<string>F7F668CA18EA29B700D4F692</string>
+				<string>F7F668D218EA29B700D4F692</string>
+				<string>F7F668CC18EA29B700D4F692</string>
+				<string>F7F668CB18EA29B700D4F692</string>
+				<string>F7F668D018EA29B700D4F692</string>
+				<string>F74C656E18E90563006CB71E</string>
+				<string>F7F668CF18EA29B700D4F692</string>
+				<string>F7F668D118EA29B700D4F692</string>
+				<string>F7F668D918EA37B800D4F692</string>
+				<string>F7F668CE18EA29B700D4F692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F74C655B18E90563006CB71E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F74C656418E90563006CB71E</string>
+				<string>F74C656618E90563006CB71E</string>
+				<string>F74C656218E90563006CB71E</string>
+				<string>F4BB26BB5FB3405797DF70E1</string>
+				<string>C9EE343C04074B57B5987638</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F74C655C18E90563006CB71E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7F668CD18EA29B700D4F692</string>
+				<string>F74C656C18E90563006CB71E</string>
+				<string>F74C657418E90563006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F74C655D18E90563006CB71E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F74C658A18E90564006CB71E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6B457A0A355748738C96674B</string>
+				<string>F74C655A18E90563006CB71E</string>
+				<string>F74C655B18E90563006CB71E</string>
+				<string>F74C655C18E90563006CB71E</string>
+				<string>4DFBD105CB2C4CEAB4AED56A</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CryptoSnap</string>
+			<key>productName</key>
+			<string>CryptoSnap</string>
+			<key>productReference</key>
+			<string>F74C655E18E90563006CB71E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>F74C655E18E90563006CB71E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CryptoSnap.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F74C655F18E90563006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F74C655E18E90563006CB71E</string>
+				<string>F74C657918E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656018E90563006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7D09E3A18E90CA8008C95E1</string>
+				<string>F7D09E3818E90C93008C95E1</string>
+				<string>F74C656118E90563006CB71E</string>
+				<string>F74C656318E90563006CB71E</string>
+				<string>F74C656518E90563006CB71E</string>
+				<string>F74C657A18E90564006CB71E</string>
+				<string>E5E92E9C6DF649B8A8A9CFD4</string>
+				<string>E6553D2C88714BF3B9B93A69</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656118E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F74C656218E90563006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C656118E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C656318E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F74C656418E90563006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C656318E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C656518E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F74C656618E90563006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C656518E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C656718E90563006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F74C657018E90563006CB71E</string>
+				<string>F74C657118E90563006CB71E</string>
+				<string>F74C657318E90563006CB71E</string>
+				<string>F74C656818E90563006CB71E</string>
+				<string>F7F668D618EA2C0700D4F692</string>
+				<string>F7E3DBFD18E9169C008A6678</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CryptoSnap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656818E90563006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F74C656918E90563006CB71E</string>
+				<string>F74C656A18E90563006CB71E</string>
+				<string>F74C656D18E90563006CB71E</string>
+				<string>F74C656F18E90563006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656918E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>CryptoSnap-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656A18E90563006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F74C656B18E90563006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656B18E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656C18E90563006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C656A18E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C656D18E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C656E18E90563006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C656D18E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C656F18E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CryptoSnap-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C657018E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CSAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C657118E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CSAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C657218E90563006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C657118E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C657318E90563006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C657418E90563006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C657318E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C657518E90564006CB71E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F74C658718E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F74C657618E90564006CB71E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F74C657B18E90564006CB71E</string>
+				<string>F74C657D18E90564006CB71E</string>
+				<string>F74C657C18E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F74C657718E90564006CB71E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F74C658518E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F74C657818E90564006CB71E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F74C658D18E90564006CB71E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F74C657518E90564006CB71E</string>
+				<string>F74C657618E90564006CB71E</string>
+				<string>F74C657718E90564006CB71E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F74C657F18E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CryptoSnapTests</string>
+			<key>productName</key>
+			<string>CryptoSnapTests</string>
+			<key>productReference</key>
+			<string>F74C657918E90564006CB71E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>F74C657918E90564006CB71E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CryptoSnapTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F74C657A18E90564006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>F74C657B18E90564006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C657A18E90564006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C657C18E90564006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C656118E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C657D18E90564006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C656518E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C657E18E90564006CB71E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>F74C655618E90563006CB71E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F74C655D18E90563006CB71E</string>
+			<key>remoteInfo</key>
+			<string>CryptoSnap</string>
+		</dict>
+		<key>F74C657F18E90564006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>F74C655D18E90563006CB71E</string>
+			<key>targetProxy</key>
+			<string>F74C657E18E90564006CB71E</string>
+		</dict>
+		<key>F74C658018E90564006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F74C658618E90564006CB71E</string>
+				<string>F74C658118E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CryptoSnapTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C658118E90564006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F74C658218E90564006CB71E</string>
+				<string>F74C658318E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C658218E90564006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>CryptoSnapTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C658318E90564006CB71E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F74C658418E90564006CB71E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C658418E90564006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C658518E90564006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C658318E90564006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C658618E90564006CB71E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CryptoSnapTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74C658718E90564006CB71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F74C658618E90564006CB71E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74C658818E90564006CB71E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F74C658918E90564006CB71E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F74C658A18E90564006CB71E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F74C658B18E90564006CB71E</string>
+				<string>F74C658C18E90564006CB71E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F74C658B18E90564006CB71E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A8F34B3B7D0140679C7896B9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CryptoSnap/CryptoSnap-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CryptoSnap/CryptoSnap-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/cezar/Documents/ios-openssl/lib</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F74C658C18E90564006CB71E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A8F34B3B7D0140679C7896B9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CryptoSnap/CryptoSnap-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CryptoSnap/CryptoSnap-Info.plist</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/cezar/Documents/ios-openssl/lib</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F74C658D18E90564006CB71E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F74C658E18E90564006CB71E</string>
+				<string>F74C658F18E90564006CB71E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F74C658E18E90564006CB71E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/CryptoSnap.app/CryptoSnap</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CryptoSnap/CryptoSnap-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>CryptoSnapTests/CryptoSnapTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F74C658F18E90564006CB71E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/CryptoSnap.app/CryptoSnap</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>CryptoSnap/CryptoSnap-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>CryptoSnapTests/CryptoSnapTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F7D09E3818E90C93008C95E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libssl.a</string>
+			<key>path</key>
+			<string>../ios-openssl/lib/libssl.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7D09E3A18E90CA8008C95E1</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libcrypto.a</string>
+			<key>path</key>
+			<string>../ios-openssl/lib/libcrypto.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7E3DBFD18E9169C008A6678</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7E3DC0118E92687008A6678</string>
+				<string>F7E3DC0218E92687008A6678</string>
+				<string>F7F668D718EA37B800D4F692</string>
+				<string>F7F668D818EA37B800D4F692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Extensions</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7E3DC0118E92687008A6678</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSString+Base64.h</string>
+			<key>path</key>
+			<string>Extensions/NSString+Base64.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7E3DC0218E92687008A6678</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSString+Base64.m</string>
+			<key>path</key>
+			<string>Extensions/NSString+Base64.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7E3DC0318E92687008A6678</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7E3DC0218E92687008A6678</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668B418EA29B700D4F692</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7F668B518EA29B700D4F692</string>
+				<string>F7F668BC18EA29B700D4F692</string>
+				<string>F7F668BD18EA29B700D4F692</string>
+				<string>F7F668C218EA29B700D4F692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>scrypt</string>
+			<key>path</key>
+			<string>lib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668B518EA29B700D4F692</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7F668B618EA29B700D4F692</string>
+				<string>F7F668B718EA29B700D4F692</string>
+				<string>F7F668B818EA29B700D4F692</string>
+				<string>F7F668B918EA29B700D4F692</string>
+				<string>F7F668BA18EA29B700D4F692</string>
+				<string>F7F668BB18EA29B700D4F692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>crypto</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668B618EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>crypto_aesctr.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668B718EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>crypto_aesctr.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668B818EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>crypto_scrypt-ref.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668B918EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>crypto_scrypt.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668BA18EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>sha256.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668BB18EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>sha256.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668BC18EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>README</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668BD18EA29B700D4F692</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7F668BE18EA29B700D4F692</string>
+				<string>F7F668BF18EA29B700D4F692</string>
+				<string>F7F668C018EA29B700D4F692</string>
+				<string>F7F668C118EA29B700D4F692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>scryptenc</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668BE18EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>scryptenc.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668BF18EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>scryptenc.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C018EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>scryptenc_cpuperf.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C118EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>scryptenc_cpuperf.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C218EA29B700D4F692</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7F668C318EA29B700D4F692</string>
+				<string>F7F668C418EA29B700D4F692</string>
+				<string>F7F668C518EA29B700D4F692</string>
+				<string>F7F668C618EA29B700D4F692</string>
+				<string>F7F668C718EA29B700D4F692</string>
+				<string>F7F668C818EA29B700D4F692</string>
+				<string>F7F668C918EA29B700D4F692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>util</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C318EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>memlimit.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C418EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>memlimit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C518EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>readpass.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C618EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>readpass.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C718EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>sysendian.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C818EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>path</key>
+			<string>warn.c</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668C918EA29B700D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>warn.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668CA18EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668B618EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668CB18EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668B818EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668CC18EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668BA18EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668CD18EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668BC18EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668CE18EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668BE18EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668CF18EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668C018EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668D018EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668C318EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668D118EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668C518EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668D218EA29B700D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668C818EA29B700D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668D318EA2BC100D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>CSEncryption.h</string>
+			<key>path</key>
+			<string>Encryption/CSEncryption.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668D418EA2BC100D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>CSEncryption.m</string>
+			<key>path</key>
+			<string>Encryption/CSEncryption.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668D518EA2BC100D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668D418EA2BC100D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7F668D618EA2C0700D4F692</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7F668D318EA2BC100D4F692</string>
+				<string>F7F668D418EA2BC100D4F692</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Encryption</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668D718EA37B800D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>NSData+Base64.h</string>
+			<key>path</key>
+			<string>Extensions/NSData+Base64.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668D818EA37B800D4F692</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSData+Base64.m</string>
+			<key>path</key>
+			<string>Extensions/NSData+Base64.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7F668D918EA37B800D4F692</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7F668D818EA37B800D4F692</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>F74C655618E90563006CB71E</string>
+</dict>
+</plist>
