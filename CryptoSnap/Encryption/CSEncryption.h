@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+@class KBUser;
 
 @interface CSEncryption : NSObject
-
 
 /**
  Calculates hmac_pwh according to Keybase.io's documentation.

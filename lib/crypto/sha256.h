@@ -26,8 +26,8 @@
  * $FreeBSD: src/lib/libmd/sha256.h,v 1.2 2006/01/17 15:35:56 phk Exp $
  */
 
-#ifndef _SHA256_H_
-#define _SHA256_H_
+#ifndef SCRYPT_SHA256_H_
+#define SCRYPT_SHA256_H_
 
 #include <sys/types.h>
 
@@ -44,9 +44,9 @@ typedef struct HMAC_SHA256Context {
 	SHA256_CTX octx;
 } HMAC_SHA256_CTX;
 
-void	SHA256_Init(SHA256_CTX *);
-void	SHA256_Update(SHA256_CTX *, const void *, size_t);
-void	SHA256_Final(unsigned char [32], SHA256_CTX *);
+void	SCRYPT_SHA256_Init(SHA256_CTX *);
+void	SCRYPT_SHA256_Update(SHA256_CTX *, const void *, size_t);
+void	SCRYPT_SHA256_Final(unsigned char [32], SHA256_CTX *);
 void	HMAC_SHA256_Init(HMAC_SHA256_CTX *, const void *, size_t);
 void	HMAC_SHA256_Update(HMAC_SHA256_CTX *, const void *, size_t);
 void	HMAC_SHA256_Final(unsigned char [32], HMAC_SHA256_CTX *);
@@ -59,4 +59,4 @@ void	HMAC_SHA256_Final(unsigned char [32], HMAC_SHA256_CTX *);
 void	PBKDF2_SHA256(const uint8_t *, size_t, const uint8_t *, size_t,
     uint64_t, uint8_t *, size_t);
 
-#endif /* !_SHA256_H_ */
+#endif /* !SCRYPT_SHA256_H_ */

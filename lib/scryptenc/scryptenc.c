@@ -236,9 +236,9 @@ scryptenc_setup(uint8_t header[96], uint8_t dk[64],
 	memcpy(&header[16], salt, 32);
 
 	/* Add header checksum. */
-	SHA256_Init(&ctx);
-	SHA256_Update(&ctx, header, 48);
-	SHA256_Final(hbuf, &ctx);
+	SCRYPT_SHA256_Init(&ctx);
+	SCRYPT_SHA256_Update(&ctx, header, 48);
+	SCRYPT_SHA256_Final(hbuf, &ctx);
 	memcpy(&header[48], hbuf, 16);
 
 	/* Add header signature (used for verifying password). */
@@ -274,9 +274,9 @@ scryptdec_setup(const uint8_t header[96], uint8_t dk[64],
 	memcpy(salt, &header[16], 32);
 
 	/* Verify header checksum. */
-	SHA256_Init(&ctx);
-	SHA256_Update(&ctx, header, 48);
-	SHA256_Final(hbuf, &ctx);
+	SCRYPT_SHA256_Init(&ctx);
+	SCRYPT_SHA256_Update(&ctx, header, 48);
+	SCRYPT_SHA256_Final(hbuf, &ctx);
 	if (memcmp(&header[48], hbuf, 16))
 		return (7);
 

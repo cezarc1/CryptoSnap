@@ -14,6 +14,11 @@
 #include <CommonCrypto/CommonDigest.h>
 #include <CommonCrypto/CommonHMAC.h>
 
+#import "KBUser.h"
+#import "KBPublicKeys.h"
+#import "KBPublicKey.h"
+#import "KBUserBasics.h"
+
 #define kCSScryptN pow(2,15)
 #define kCSScryptR 8
 #define kCSScryptP 1

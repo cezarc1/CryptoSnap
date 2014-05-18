@@ -7,23 +7,29 @@
 //
 
 #import "CSAppDelegate.h"
-#import "crypto_scrypt.h"
-#import "NSData+Base64.h"
-#import "NSString+Base64.h"
-#include <CommonCrypto/CommonDigest.h>
-#include <CommonCrypto/CommonHMAC.h>
-
-
+#import "CSAPIConstants.h"
+#import <Parse/Parse.h>
 
 @implementation CSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [Parse setApplicationId:kParseAppId
+                  clientKey:kParseAppSecret];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    [self setDefaultParseSecurityPolicy];
+    
     return YES;
+}
+
+- (void)setDefaultParseSecurityPolicy
+{
+    [PFUser enableAutomaticUser];
+    PFACL *defaultACL = [PFACL ACL];
+    [defaultACL setPublicReadAccess:YES];
+    [defaultACL setPublicWriteAccess:NO];
+    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
 }
 
 

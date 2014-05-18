@@ -18,23 +18,34 @@ PODS:
   - AFNetworking/UIKit (2.2.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DateTools (1.2.0)
+  - Facebook-iOS-SDK (3.13.1)
   - Mantle (1.4.1):
     - Mantle/extobjc
   - Mantle/extobjc (1.4.1)
+  - NSHash (1.0.1)
   - OpenSSL (1.0.1)
-  - UNNetPGP (0.8.1):
-    - OpenSSL
+  - SVProgressHUD (HEAD based on 1.0)
+  - URBMediaFocusViewController (0.5.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.2.1)
+  - DateTools
+  - Facebook-iOS-SDK
   - Mantle (~> 1.4.1)
+  - NSHash (~> 1.0.1)
   - OpenSSL
-  - UNNetPGP (~> 0.8)
+  - SVProgressHUD (HEAD)
+  - URBMediaFocusViewController
 
 SPEC CHECKSUMS:
   AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
+  DateTools: 6989dcb0df9dad3ae499f5e9efbd988116586f67
+  Facebook-iOS-SDK: 47ae9e54684c84f93d75d4e6ab47cd031abdf406
   Mantle: 0714cdb2b8559d9e6c2410d6a8529e3307bff189
-  OpenSSL: 9b85178853701b1e9bbf70df695a4c149799e772
-  UNNetPGP: 5a954c0378419df9b391a11a333a9e4ece36014c
+  NSHash: 7e728a3e7fdff6828f3fce387049b1e0ca7fe8a0
+  OpenSSL: d2b9c24d992ed636cb0e724c2a0185c355eab47d
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
+  URBMediaFocusViewController: df0ca84c313d1f877ee8eadca256656af96fe8f7
 
-COCOAPODS: 0.31.0
+COCOAPODS: 0.32.1
