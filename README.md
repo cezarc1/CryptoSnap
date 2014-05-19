@@ -1,21 +1,21 @@
 CryptoSnap for iOS
 ======================
 
-An attempt to create a full end-to-end encrypted SnapChat.
+An attempt to create a full end-to-end encrypted SnapChat. It does this by leveraging [Keybase](https://keybase.io) and [Parse](https://www.parse.com)
 
 ###Motivation
 
-This project attempts to use Keybase as a key distribution center and use the key pairs stored to encrypt/decrypt photos stored on Parse.
+This project attempts to use [Keybase](https://keybase.io) as a key distribution center and use the key pairs stored to encrypt/decrypt photos stored on Parse.
 
 The photos are stored on Parse as PFObjects which have a photo attribute which is base 64 encoded.
 
 ###Important Notes
 
-This app connects to KeyBase and successfully logs in and retrieves a private user object
+This app logs into [Keybase](https://keybase.io/__/api-docs/1.0#call-getsalt) and retrieves a private user object
 
-This project fails in encrypting and decrypting any photos due to the private keys on Keybase being stored in P3SKB Format. I could not for the life of me get the message unpacked using the Msgpack Objective-C wrapper.
+This project fails in encrypting and decrypting any photos due to the private keys served in the [P3SKB Format](https://keybase.io/__/api-docs/1.0#p3skb-format) by the [Keybase API](https://keybase.io/__/api-docs/1.0#intro). I could not for the life of me get the message unpacked using the [Msgpack Objective-C wrapper](https://github.com/msgpack/msgpack-objectivec).
 
-As such, this app connects to parse, retrieves and sends UNENCRYPTED images to its appropriate recipient.
+As such, this app connects to Parse, retrieves and stores the UNENCRYPTED images  on parse for its appropriate recipient.
 
 ###Usage
 
